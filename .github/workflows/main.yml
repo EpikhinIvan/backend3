@@ -35,7 +35,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          source /root/venv/bin/activate        
+          source /root/myenv/bin/activate        
           cd /root/backend3/
           git pull origin master
           python manage.py migrate
